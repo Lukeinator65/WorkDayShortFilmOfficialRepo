@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Mirror.ma
-//Last modified: Thu, Sep 04, 2025 06:56:16 PM
+//Last modified: Thu, Sep 04, 2025 07:00:44 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "B4389AB3-4AB1-B553-7828-31BBE466AFD5";
+fileInfo "UUID" "DF53DB8A-425F-3523-5C38-8C8AE1CC7417";
 createNode transform -s -n "persp";
 	rename -uid "624F42D8-44E5-F7A6-B944-42B4F4D913A8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.6964168552644594 17.603203527984952 -57.833189020292238 ;
-	setAttr ".r" -type "double3" -0.67975934259291027 -2702.2107045739426 0 ;
+	setAttr ".t" -type "double3" 4.5313198995154877 21.769170516096437 -57.682714381407663 ;
+	setAttr ".r" -type "double3" -4.2797593425924827 -2698.6107045739254 0 ;
 	setAttr ".rp" -type "double3" 0 -1.7763568394002505e-15 -7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" 2.5305958925940544e-15 5.9331850409012129e-14 -7.1991122479833182e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
