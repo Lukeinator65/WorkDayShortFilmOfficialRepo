@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: TreasureGuardSign.ma
-//Last modified: Sat, Sep 06, 2025 10:04:41 PM
+//Last modified: Sat, Sep 06, 2025 10:10:59 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,20 +10,23 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "ACC0B5D8-4536-0A73-2CB6-45BAE4CCD854";
+fileInfo "UUID" "2F9D2749-49DE-F74A-1B52-14A9B14707BD";
 createNode transform -s -n "persp";
 	rename -uid "97D56845-45DE-B8E9-734C-DFA56B74AD38";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.0672742949530605 10.293055041018398 14.632773186096228 ;
-	setAttr ".r" -type "double3" -27.338352729610563 -365.4000000001414 0 ;
+	setAttr ".t" -type "double3" 13.97201363679185 16.319368528977499 13.972013636791839 ;
+	setAttr ".r" -type "double3" -35.264389682754668 45.000000000000007 -6.7469753495924191e-15 ;
+	setAttr ".rp" -type "double3" -2.55351295663786e-15 -2.886579864025407e-15 0 ;
+	setAttr ".rpt" -type "double3" 2.1826695462218845e-15 1.2682077261043473e-15 2.6197702888065476e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1CEF47B4-49AD-6829-B396-169552186C08";
 	setAttr -k off ".v" no;
-	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 15.430180175352788;
+	setAttr ".fl" 34.999999999999979;
+	setAttr ".coi" 24.200237502968704;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" -7.1054273576010019e-15 2.3473548921856455 -1.0658141036401503e-14 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "93E54695-418F-DA3B-D0A6-D69B5A4FC0BB";
