@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Book_Variations.ma
-//Last modified: Mon, Sep 08, 2025 08:48:07 PM
+//Last modified: Tue, Sep 09, 2025 10:52:32 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,19 +11,19 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "07DA17FF-4E7D-57C2-FE29-649A8DA2CF20";
+fileInfo "UUID" "38369120-46B6-9E0F-92AE-48A10CF5ABF2";
 createNode transform -s -n "persp";
 	rename -uid "A524998F-4D02-0F2A-E379-7684D2599F0C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.56970882093829656 7.8167081807170211 6.0544059247661375 ;
-	setAttr ".r" -type "double3" -421.20000000160644 -4681.6000000004096 -1.4914665072953308e-15 ;
+	setAttr ".t" -type "double3" -2.3438521530890735 13.957213889009306 3.5973211488405852 ;
+	setAttr ".r" -type "double3" -432.00000000158934 -4689.6000000006334 -1.6128638259638516e-15 ;
 	setAttr ".rpt" -type "double3" 2.4346753537484271e-17 3.3106191978722922e-16 -3.1140312471234115e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "43F0B3C0-4522-233F-577D-4CBFDE80D95C";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 9.4722072352428182;
+	setAttr ".coi" 14.584231400549447;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -48603,6 +48603,7 @@ connectAttr "|Book_B_11_Geo|Book_Buckle_02|Buckle|BuckleShape.iog" "standardSurf
 		 -na;
 connectAttr "standardSurface2SG.msg" "materialInfo3.sg";
 connectAttr "standardSurface2.msg" "materialInfo3.m";
+connectAttr "standardSurface2.msg" "materialInfo3.t" -na;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "surfaceShader1SG.pa" ":renderPartition.st" -na;
 connectAttr "standardSurface2SG.pa" ":renderPartition.st" -na;
