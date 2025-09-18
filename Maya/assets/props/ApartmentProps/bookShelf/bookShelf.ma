@@ -1,6 +1,10 @@
 //Maya ASCII 2025ff03 scene
 //Name: bookShelf.ma
+<<<<<<< HEAD
 //Last modified: Thu, Sep 18, 2025 10:37:03 AM
+=======
+//Last modified: Wed, Sep 17, 2025 08:48:12 PM
+>>>>>>> 5647954 (fixed UVs)
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -13,12 +17,21 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
+<<<<<<< HEAD
 fileInfo "UUID" "630F829C-4B2E-D255-6921-479EF37E1BCE";
 createNode transform -s -n "persp";
 	rename -uid "1F072FB6-4BB5-C7C9-1FB0-1C93C03491CD";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.66136929164499669 10.006152044036853 27.233892155997474 ;
 	setAttr ".r" -type "double3" -16.53835273045464 2160.1999999989034 8.1999174948510489e-16 ;
+=======
+fileInfo "UUID" "963CBEEF-4D97-A95F-D706-0B931E595A2D";
+createNode transform -s -n "persp";
+	rename -uid "1F072FB6-4BB5-C7C9-1FB0-1C93C03491CD";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" 2.255720914314205 8.1501720942245264 17.138661355253603 ;
+	setAttr ".r" -type "double3" -5.1383527327479452 2532.2000000034532 -1.0168888635643274e-16 ;
+>>>>>>> 5647954 (fixed UVs)
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9D8B7909-486F-ED7E-75AF-C5BE61D2BCD7";
 	setAttr -k off ".v" no;
@@ -7891,6 +7904,7 @@ createNode mesh -n "Bookshelf_Moveables_GeoShape" -p "Bookshelf_Moveables_Geo";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
+<<<<<<< HEAD
 	rename -uid "639038CC-416B-4237-7629-6498261E7050";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
@@ -7900,11 +7914,26 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "8E32111C-4A16-07B9-07CE-0B83245F52EF";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "016C6BF1-4963-321B-F752-8384665F4E51";
+=======
+	rename -uid "E3738D83-494E-F40F-AF93-B0A8F29983C8";
+	setAttr -s 6 ".lnk";
+	setAttr -s 6 ".slnk";
+createNode shapeEditorManager -n "shapeEditorManager";
+	rename -uid "4FD6EAFC-4829-F2BD-6B91-C19724412D0F";
+createNode poseInterpolatorManager -n "poseInterpolatorManager";
+	rename -uid "40295AFB-465F-6513-C909-43AC0D962F68";
+createNode displayLayerManager -n "layerManager";
+	rename -uid "8FBE1A3B-4A3B-FF1E-8ABB-80B27FA91071";
+>>>>>>> 5647954 (fixed UVs)
 createNode displayLayer -n "defaultLayer";
 	rename -uid "648A2333-41CE-8029-E290-268EF323739A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
+<<<<<<< HEAD
 	rename -uid "4122646F-4D92-E773-61C6-499A5742552D";
+=======
+	rename -uid "14D3E375-41D6-5718-7C58-038A5541EBBA";
+>>>>>>> 5647954 (fixed UVs)
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2DB5D215-4C42-BA13-9F16-07A63CF9A644";
 	setAttr ".g" yes;
@@ -8208,6 +8237,7 @@ createNode polyTweak -n "polyTweak6";
 	setAttr ".tk[1550]" -type "float3" 0 0 -0.20139362 ;
 	setAttr ".tk[1564]" -type "float3" 0 0 -0.20139362 ;
 	setAttr ".tk[1565]" -type "float3" 0 0 -0.20139362 ;
+<<<<<<< HEAD
 createNode polyDelEdge -n "polyDelEdge1";
 	rename -uid "103E0D8B-4709-809B-AC50-CC868B1AFD31";
 	setAttr ".ics" -type "componentList" 1 "e[3313]";
@@ -9490,6 +9520,8 @@ createNode polyTweak -n "polyTweak16";
 	setAttr ".tk[1443]" -type "float3" -7.1525574e-07 0.080136709 -2.3841858e-07 ;
 	setAttr ".tk[1444]" -type "float3" 0 0.080652848 0 ;
 	setAttr ".tk[1513]" -type "float3" 7.1525574e-07 0 -1.1920929e-07 ;
+=======
+>>>>>>> 5647954 (fixed UVs)
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -9535,7 +9567,11 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
+<<<<<<< HEAD
 connectAttr "polyAutoProj4.out" "bookshelfShape.i";
+=======
+connectAttr "polyAutoProj1.out" "bookshelfShape.i";
+>>>>>>> 5647954 (fixed UVs)
 connectAttr "groupId136.id" "bookshelfShape.iog.og[1].gid";
 connectAttr "set1.mwc" "bookshelfShape.iog.og[1].gco";
 connectAttr "groupId137.id" "bookshelfShape.iog.og[2].gid";
@@ -9648,6 +9684,7 @@ connectAttr "groupId142.id" "groupParts5.gi";
 connectAttr "polyTweak6.out" "polyAutoProj1.ip";
 connectAttr "bookshelfShape.wm" "polyAutoProj1.mp";
 connectAttr "groupParts5.og" "polyTweak6.ip";
+<<<<<<< HEAD
 connectAttr "polyAutoProj1.out" "polyDelEdge1.ip";
 connectAttr "polyDelEdge1.out" "polyAutoProj2.ip";
 connectAttr "bookshelfShape.wm" "polyAutoProj2.mp";
@@ -9718,6 +9755,8 @@ connectAttr "polyMergeVert10.out" "polyTweak15.ip";
 connectAttr "polyTweak16.out" "polyAutoProj4.ip";
 connectAttr "bookshelfShape.wm" "polyAutoProj4.mp";
 connectAttr "polyMergeVert11.out" "polyTweak16.ip";
+=======
+>>>>>>> 5647954 (fixed UVs)
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
