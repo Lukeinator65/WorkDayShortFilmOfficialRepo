@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: ShortFilm_Frames 49-51.ma
-//Last modified: Thu, Sep 25, 2025 04:15:50 PM
+//Name: ShortFilm_Shots 49-51.ma
+//Last modified: Thu, Sep 25, 2025 04:28:05 PM
 //Codeset: 1252
 file -rdi 1 -ns "Knight_Retopo" -dr 1 -rfn "Knight_RetopoRN" -op "v=0;p=17" 
 		-typ "mayaAscii" "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya//assets/characters/knight/Knight Retopo.ma";
@@ -11,17 +11,6 @@ file -r -ns "Knight_Retopo" -dr 1 -rfn "Knight_RetopoRN" -op "v=0;p=17" -typ "ma
 		 "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya//assets/characters/knight/Knight Retopo.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;p=17" -typ "mayaAscii" "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -r -ns "Skeleton1" -dr 1 -rfn "SkeletonRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
-=======
-//Last modified: Tue, Sep 23, 2025 06:05:21 PM
-//Codeset: 1252
-file -rdi 1 -ns "Knight_Retopo" -rfn "Knight_RetopoRN" -op "v=0;p=17" -typ "mayaAscii"
-		 "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya/assets/characters/knight/Knight Retopo.ma";
-file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;p=17" -typ "mayaAscii"
-		 "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
-file -r -ns "Knight_Retopo" -dr 1 -rfn "Knight_RetopoRN" -op "v=0;p=17" -typ "mayaAscii"
-		 "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya/assets/characters/knight/Knight Retopo.ma";
-file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;p=17" -typ "mayaAscii" "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
->>>>>>> origin/AnimFrames49-51
 requires maya "2024";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -32,21 +21,13 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "8632540C-4F15-322B-92AB-EB9EB4BE45B9";
+fileInfo "UUID" "E6F052A0-495D-61F6-22E7-CBB40B5248F5";
 createNode transform -s -n "persp";
 	rename -uid "EEE2C7B1-4DFB-9163-3AC0-0EBB0026485E";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -479.84235613676219 694.94900897726893 1205.0655091876663 ;
 	setAttr ".r" -type "double3" -23.138352740970749 -361.40000000000384 -9.4450911668257878e-16 ;
 	setAttr ".rpt" -type "double3" -3.520424006033729e-15 7.0073737337097393e-15 2.4618686986649454e-14 ;
-=======
-fileInfo "UUID" "BC776120-42E6-6D09-DC6D-B5B4EB10C981";
-createNode transform -s -n "persp";
-	rename -uid "EEE2C7B1-4DFB-9163-3AC0-0EBB0026485E";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" -132.53581296434967 294.14368213259655 557.54605236331258 ;
-	setAttr ".r" -type "double3" -21.338352729606278 -7.4000000000001531 -2.0045421822468782e-16 ;
->>>>>>> origin/AnimFrames49-51
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D41BEE72-40A4-8D2B-F267-F5904CA3CD4A";
 	setAttr -k off ".v" no;
@@ -56,87 +37,51 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
 	setAttr ".tp" -type "double3" -150.68076839014273 288.34332556897346 6.2172489379008766e-15 ;
-=======
-	setAttr ".coi" 566.5558151952655;
-	setAttr ".imn" -type "string" "persp";
-	setAttr ".den" -type "string" "persp_depth";
-	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 13.478866772042101 158.41531234903516 -0.17074482912048516 ;
->>>>>>> origin/AnimFrames49-51
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4C093DA0-4412-CA48-FE9F-B686E8EA5675";
 	setAttr ".v" no;
-<<<<<<< HEAD
 	setAttr ".t" -type "double3" -116.63581599825436 1000.1 -0.78571133175712049 ;
-=======
-	setAttr ".t" -type "double3" 0 1000.1 0 ;
->>>>>>> origin/AnimFrames49-51
 	setAttr ".r" -type "double3" -90 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "FAC837C0-4CCE-5A86-2539-97A3504336FE";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-<<<<<<< HEAD
 	setAttr ".coi" 780.39374734946546;
 	setAttr ".ow" 433.6908171038491;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
 	setAttr ".tp" -type "double3" 0 219.70625265053457 0 ;
-=======
-	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
-	setAttr ".imn" -type "string" "top";
-	setAttr ".den" -type "string" "top_depth";
-	setAttr ".man" -type "string" "top_mask";
->>>>>>> origin/AnimFrames49-51
 	setAttr ".hc" -type "string" "viewSet -t %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "front";
 	rename -uid "FB58CA82-4E4D-36D4-CDED-C18312EA1702";
 	setAttr ".v" no;
-<<<<<<< HEAD
 	setAttr ".t" -type "double3" -95.496282297399134 268.05880064921763 1023.9486546959962 ;
-=======
-	setAttr ".t" -type "double3" 0 0 1000.1 ;
->>>>>>> origin/AnimFrames49-51
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "C6A025BE-47F7-240C-5962-C1B4B279D76F";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-<<<<<<< HEAD
 	setAttr ".coi" 1023.9486546959962;
 	setAttr ".ow" 1022.6563901721482;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
 	setAttr ".tp" -type "double3" 0 219.70625265053457 0 ;
-=======
-	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
-	setAttr ".imn" -type "string" "front";
-	setAttr ".den" -type "string" "front_depth";
-	setAttr ".man" -type "string" "front_mask";
->>>>>>> origin/AnimFrames49-51
 	setAttr ".hc" -type "string" "viewSet -f %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "side";
 	rename -uid "9108D1CD-4B69-0F0F-AF5E-E29B7D3F0233";
 	setAttr ".v" no;
-<<<<<<< HEAD
 	setAttr ".t" -type "double3" 1001.1198021917573 285.67379549786278 9.5177536297260197 ;
-=======
-	setAttr ".t" -type "double3" 1000.1 0 0 ;
->>>>>>> origin/AnimFrames49-51
 	setAttr ".r" -type "double3" 0 90 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "56297CA0-4B0A-51B8-E4E5-0FBFA1D232BA";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-<<<<<<< HEAD
 	setAttr ".coi" 1104.2271617346023;
 	setAttr ".ow" 258.11627493156118;
 	setAttr ".imn" -type "string" "side";
@@ -269,15 +214,9 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".output_mode" 0;
 createNode reference -n "Knight_RetopoRN";
 	rename -uid "D62E25D6-4E6D-5747-9062-0C85AAA9ED11";
-<<<<<<< HEAD
 	setAttr ".fn[0]" -type "string" "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya//assets/characters/knight/Knight Retopo.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Knight_RetopoRN"
-=======
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Knight_RetopoRN"
-		"Knight_RetopoRN" 0
->>>>>>> origin/AnimFrames49-51
 		"Knight_RetopoRN" 9
 		2 "|Knight_Retopo:Knight" "translate" " -type \"double3\" 0 0 0"
 		2 "|Knight_Retopo:Knight|Knight_Retopo:Controls|Knight_Retopo:Transform_ctrl_grp|Knight_Retopo:Transform_ctrl" 
@@ -300,17 +239,10 @@ createNode reference -n "Knight_RetopoRN";
 lockNode -l 1 ;
 createNode reference -n "SkeletonRN";
 	rename -uid "6FA504A8-4CFC-B0E7-75C2-A0BD95060ED0";
-<<<<<<< HEAD
 	setAttr ".fn[0]" -type "string" "C:/Users/jesse/GitHub/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SkeletonRN"
 		"SkeletonRN" 32
-=======
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"SkeletonRN"
-		"SkeletonRN" 0
-		"SkeletonRN" 26
->>>>>>> origin/AnimFrames49-51
 		2 "|Skeleton:Skeleton_Asset" "translate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl" 
 		"translate" " -type \"double3\" -211.40093592817652279 0 0"
@@ -327,7 +259,6 @@ createNode reference -n "SkeletonRN";
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp" 
 		"rotate" " -type \"double3\" 90 -5.96746507422212691 90"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp" 
-<<<<<<< HEAD
 		"rotateX" " -av"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp" 
 		"rotateY" " -av"
@@ -343,11 +274,6 @@ createNode reference -n "SkeletonRN";
 		"translateZ" " -av"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Face_Controls" 
 		"translateX" " -av"
-=======
-		"rotateY" " -av"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls" 
-		"rotate" " -type \"double3\" 0 0 0"
->>>>>>> origin/AnimFrames49-51
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:L_Arm_IKFK_Ctrl_Grp|Skeleton:L_Arm_IKFK_Ctrl_Grp_parentConstraint1" 
@@ -385,7 +311,6 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "EDBAAA37-48BA-0F51-CD23-C08F3B32B881";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-<<<<<<< HEAD
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
 		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
@@ -433,7 +358,6 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "E6913143-4769-9D5C-6DFA-B5A99753AD46";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
-<<<<<<< HEAD
 createNode reference -n "sharedReferenceNode";
 	rename -uid "F5AB868B-4FB4-4837-E46E-26BC20DCFCEB";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -12757,7 +12681,7 @@ createNode animCurveTU -n "R_Toe_03_Knuckle_03_Ctrl_scaleZ";
 	setAttr -s 3 ".ktv[0:2]"  1 1 10 1 20 1;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "1FA3F803-4C56-434A-DC95-C9933DA6E387";
+	rename -uid "457B2EAC-4FF0-11CE-243E-598484060B7E";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -12767,7 +12691,6 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
-<<<<<<< HEAD
 	setAttr ".aoon" yes;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
@@ -12784,31 +12707,10 @@ select -ne :defaultRenderingList1;
 	setAttr -s 2 ".r";
 select -ne :defaultTextureList1;
 	setAttr -s 3 ".tx";
-=======
-	setAttr ".fprt" yes;
-	setAttr ".rtfm" 1;
-select -ne :renderPartition;
-	setAttr -s 28 ".st";
-select -ne :renderGlobalsList1;
-select -ne :defaultShaderList1;
-	setAttr -s 29 ".s";
-select -ne :postProcessList1;
-	setAttr -s 2 ".p";
-select -ne :defaultRenderUtilityList1;
-	setAttr -s 93 ".u";
-select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
-select -ne :defaultTextureList1;
-	setAttr -s 12 ".tx";
->>>>>>> origin/AnimFrames49-51
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-<<<<<<< HEAD
-=======
-	setAttr -s 2 ".dsm";
->>>>>>> origin/AnimFrames49-51
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -14185,8 +14087,6 @@ connectAttr "polyPlane1.out" "pPlaneShape1.i";
 connectAttr "CameraLayer.di" "Shot49Cam.do";
 connectAttr "CameraLayer.di" "Shot50Cam.do";
 connectAttr "CameraLayer.di" "Shot51Cam.do";
-=======
->>>>>>> origin/AnimFrames49-51
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -14197,14 +14097,10 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
-<<<<<<< HEAD
 connectAttr "sharedReferenceNode.sr" "Knight_RetopoRN.sr";
 connectAttr "sharedReferenceNode.sr" "SkeletonRN.sr";
 connectAttr "layerManager.dli[2]" "FloorLayer.id";
 connectAttr "layerManager.dli[3]" "CameraLayer.id";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
-=======
-connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
->>>>>>> origin/AnimFrames49-51
-// End of ShortFilm_Frames 49-51.ma
+// End of ShortFilm_Shots 49-51.ma
